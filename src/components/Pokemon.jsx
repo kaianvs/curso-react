@@ -1,7 +1,8 @@
-export const Pokemon = ()=> {
-    return (
+export const Pokemon = ({name = 'Pikachu'})=> {
+    
+   return (
      <h2>
-        Nome do pokemon: pikachu
+        Nome do pokemon: {name ? name : 'Pikachu'}
      </h2>
     );
   }
